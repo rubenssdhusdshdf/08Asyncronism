@@ -2,10 +2,6 @@ const promise = new Promise(function (resolve, reject) {
   resolve("hey!");
 });
 
-const promise = new Promise(function (resolve, reject) {
-  resolve("hey!");
-});
-
 const cows = 15;
 
 const countCows = new Promise(function (resolve, reject) {
@@ -15,14 +11,3 @@ const countCows = new Promise(function (resolve, reject) {
     reject("There are no cows on the farm");
   }
 });
-
-countCows
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.log(error);
-  })
-  .finally(() => {
-    console.log("finally");
-  });
